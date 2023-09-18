@@ -69,7 +69,6 @@ class Quantum_Network():
         self.end_selection()
         for i in range(len(self.edge_list)):
             channel_count = 0
-            print("values of i {i}")
             setGlobalValues(channel_order, channel_count, self.window)
             edge_coords = self.canvas.coords(self.edge_list[i].line_id)
             ball_coords = [edge_coords[0], edge_coords[1]]

@@ -42,7 +42,6 @@ def create_or_reload_canvas(new_fig):
 def periodic_update():
     global window_local, counter, canvas_widgets, channel_order
     print("in periodic update")
-    print("Channel Length {len(channel_order)}")
     if (counter < len(channel_order)):
         print(counter)
         circuit_transition(channel_order[counter])
